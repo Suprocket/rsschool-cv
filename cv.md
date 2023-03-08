@@ -22,6 +22,7 @@ Hi! I like to create cool interactive websites that will profit to the business.
 6. VS Code
 7. 1C-bitrix, Wordpress
 8. PHP, Python, C++ (Base syntax)
+9. Blender
 
 ### Work projects:
 
