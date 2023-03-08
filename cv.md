@@ -25,9 +25,42 @@ Hi! I like to create cool interactive websites that will profit to the business.
 
 ### Work projects:
 
+* [Create SPA for stmwater.ru](https://stmwater24.ru/)  
+* [Pet-projects in my github](https://github.com/Suprocket)
+
 ### Code example:
+
+My example of creating an aggregation with a reduce method:
+
+```
+const groupBy = (arrOfUsers, nameOfKey = '') => {
+  let preacc = (acc, user) => {
+    if (!Object.hasOwn(acc, user[nameOfKey])) {
+      acc[user[nameOfKey]] = [];
+    }
+    acc[user[nameOfKey]].push(user);
+    return acc;
+  }
+  let total = arrOfUsers.reduce(preacc, {});
+  return total;
+}
+ 
+const students = [
+  { name: 'Tirion', class: 'B', mark: 3 },
+  { name: 'Keit', class: 'A', mark: 3 },
+  { name: 'Ramsey', class: 'A', mark: 4 },
+];
+ 
+console.log(groupBy([], ''));
+console.log(groupBy(students, 'mark'));
+```
 
 ### Courses:
 
+Result school (junior frontend dev, february 2022)  
+Hexlet (junior frontend dev, october 2022)  
+
 ### Languages:
 
+English B1,  
+French A2.
