@@ -1,1 +1,1 @@
-https://suprocket.github.io/rsschool-cv/cv
+https://suprocket.github.io/rsschool-cv/
