@@ -1,15 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV RS_School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/fav.ico">
   </head>
   <body>
-    Hello world! My avatar:
-    <img
-      src="https://avatars.githubusercontent.com/u/70916695"
-      alt="My photo"
-    />
+    <div class="container">
+      <div class="photo">
+        <img src="img/photo.png" alt="My photo">
+      </div>
+      <div class="content">
+        <h1>Maxim Samokhvalov</h1>
+        <h2>Junior frontend developer</h2>
+
+        <nav>
+          <ul>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Footer</a></li>
+          </ul>
+        </nav>
+
+        <header>
+          <h3>Contact information</h3>
+          <p>Phone: +79911083606</p>
+          <p>
+            Telegram: <a href="https://t.me/sa_max_valoff">sa_max_valoff</a>
+          </p>
+          <p>GitHub: <a href="https://github.com/Suprocket">suprocket</a></p>
+        </header>
+
+        <main>
+          <h3>Briefly About Myself</h3>
+          <p>
+            Hi! I'm passionate about creating cool, interactive websites that
+            drive business success. I love learning new things from the IT world
+            and applying them immediately. I believe that front-end development
+            will help me achieve my goals in the IT industry.
+          </p>
+        </main>
+
+        <section>
+          <h3>Skills and Proficiency</h3>
+          <ul>
+            <li>HTML (Emmet)</li>
+            <li>SASS (Tailwind, Bootstrap)</li>
+            <li>JS (React)</li>
+            <li>Git</li>
+            <li>Figma & Photoshop</li>
+            <li>VS Code</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Work projects</h3>
+          <ul>
+            <li>
+              <a href="https://stmwater24.ru/">Create SPA for stmwater.ru</a>
+            </li>
+            <li>
+              <a href="https://github.com/Suprocket"
+                >Pet-projects in my GitHub</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Code example</h3>
+          <pre><code>
+import readlineSync from 'readline-sync';
+
+const completeRounds = 3;
+
+const engine = (gameInfo, gameData) => {
+  console.log('Welcome to the Brain Games!');
+
+  const name = readlineSync.question('May I have your name?: ');
+  console.log(`Hello, ${name}`);
+
+  console.log(gameInfo);
+
+  for (let correctAnswers = 0; correctAnswers < completeRounds; correctAnswers += 1) {
+    const [gameQuestion, compAnswer] = gameData();
+    console.log(`Question: ${gameQuestion}`);
+    const userAnswer = (readlineSync.question('Your answer: '));
+    if (userAnswer !== compAnswer) {
+      console.log(`'${userAnswer}' is wrong answer. Correct answer was '${compAnswer}'`);
+      console.log(`Let's try again, ${name}!`);
+      return;
+    }
+    console.log('Correct!');
+  }
+  console.log(`Congratulations, ${name}!`);
+};
+
+export default engine;
+                </code></pre>
+        </section>
+
+        <section>
+          <h3>Courses</h3>
+          <p>Result school (junior frontend dev, february 2022)</p>
+          <p>Hexlet (junior frontend dev, october 2022)</p>
+        </section>
+
+        <section>
+          <h3>Languages</h3>
+          <p>English B1</p>
+          <p>French A2</p>
+        </section>
+      </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Maxim Samokhvalov</p>
+        <p>
+          <a href="https://rs.school/courses/javascript-preschool-ru"><img src="img/rs_school_logo.jpg" alt="RS School Logo" style="width: 50px;"></a>
+        </p>
+        <p>
+            GitHub: <a href="https://github.com/Suprocket">suprocket</a>
+          </p>
+      </footer>
   </body>
 </html>
