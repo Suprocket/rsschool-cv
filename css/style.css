@@ -6,6 +6,10 @@ body {
   background: hsla(186, 33%, 94%, 1);
 }
 
+li{
+  list-style-type: none;
+}
+
 .container {
   width: 80%;
   max-width: 1200px;
